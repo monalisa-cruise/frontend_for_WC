@@ -9,7 +9,7 @@ function App() {
     const handleCrawl = async () => {
         setLoading(true);
         try {
-            const response = await fetch("http://localhost:50000/crawl", {
+            const response = await fetch("https://backend-for-wc.onrender.com/crawl", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
